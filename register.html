@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | Anantya 2025</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+  <form id="registrationForm">
+    <h2>Register for Anantya 2025</h2>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" required />
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" pattern="[0-9]{10}" required />
+
+    <label for="branch">Department/Branch</label>
+    <input type="text" id="branch" required />
+
+    <label for="year">Year of Study</label>
+    <select id="year" required>
+      <option value="">Select Year</option>
+      <option value="First">First</option>
+      <option value="Second">Second</option>
+      <option value="Third">Third</option>
+      <option value="Final">Final</option>
+    </select>
+
+    <button type="submit">Submit</button>
+    <div class="success" id="successMessage">✅ Registration Successful!</div>
+  </form>
+
+  <script src="register.js"></script>
+</body>
+</html>
