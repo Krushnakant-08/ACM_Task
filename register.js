@@ -13,6 +13,5 @@ document.getElementById("registrationForm").addEventListener("submit", function(
 
   document.getElementById("successMessage").style.display = "block";
 
-  // Optional redirect
-  // window.location.href = "thankyou.html";
+  window.location.href = "thank.html";
 });
